@@ -8,7 +8,7 @@ This project is to help the CMR to develop and enhance their IT by having a new 
 * [x] Adding the connectivity to a Database
 * [ ] Adding Flyway to manage the Database migration
 * [ ] Adding security to avoid unwanted connection
-* [ ] Dealing with the tests accounts and environments
+* [x] Dealing with the tests accounts and environments
 
 ## Setup
 Please, avoid using your google end user to build and run the project.
