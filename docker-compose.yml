@@ -1,0 +1,21 @@
+version: '3'
+volumes:
+  mysql_data:
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cloudcmr
+      MYSQL_USER: cloudcmr
+      MYSQL_PASSWORD: cloudcmr
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9080:8080
