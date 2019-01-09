@@ -6,7 +6,7 @@ This project is to help the CMR to develop and enhance their IT by having a new 
 ## TODO List
 * [x] Adding Spring-boot, data and rest to manage the entities
 * [x] Adding the connectivity to a Database
-* [ ] Adding Flyway to manage the Database migration
+* [ ] Adding JavaLite to manage the Database migration (see if still relevant)
 * [ ] Adding security to avoid unwanted connection
 * [x] Dealing with the tests accounts and environments
 

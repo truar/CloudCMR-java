@@ -5,7 +5,7 @@ spring:
       defaultMediaType: "application/json"
   jpa:
     hibernate:
-      ddl-auto: "create-drop"
+      ddl-auto: "update"
 
     # Cloud SQL (MySQL) only supports InnoDB, not MyISAM
     database-platform: "org.hibernate.dialect.MySQL55Dialect"
