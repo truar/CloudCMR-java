@@ -1,0 +1,17 @@
+spring:
+  data:
+    rest:
+      basePath: "/api"
+      defaultMediaType: "application/json"
+  jpa:
+    hibernate:
+      ddl-auto: "create-drop"
+
+    # Cloud SQL (MySQL) only supports InnoDB, not MyISAM
+    database-platform: "org.hibernate.dialect.MySQL55Dialect"
+
+  datasource:
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    username: "cloudcmr"
+    password: "cloudcmr"
+    url: "jdbc:mysql://localhost:3306/cloudcmr"

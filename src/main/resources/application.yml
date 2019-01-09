@@ -1,0 +1,30 @@
+spring:
+  data:
+    rest:
+      basePath: "/api"
+      defaultMediaType: "application/json"
+  cloud:
+    gcp:
+      sql:
+        database-name: "reservations"
+        instance-connection-name: "cloudcmr:europe-west1:reservations"
+
+  ## If not provided, use the default user currently log with gcloud
+  #     credentials:
+  #        location:
+
+  datasource:
+    initialization-mode: "always"
+    hikari:
+      maximum-pool-size: 2
+  # Leave empty for root, uncomment and fill out if you specified a user
+  #      username:
+  #
+  # Uncomment if root password is specified
+  #      password:
+
+  jpa:
+    hibernate:
+      ddl-auto: "none"
+      # Cloud SQL (MySQL) only supports InnoDB, not MyISAM
+      database-platform: "org.hibernate.dialect.MySQL55Dialect"

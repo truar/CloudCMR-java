@@ -60,3 +60,6 @@ Once you are ready, you can deploy the application by executing:
 ```
 ./mvnw -Pgcp appengine:deploy
 ```
+
+# Miscellaneous
+https://github.com/DiUS/java-faker

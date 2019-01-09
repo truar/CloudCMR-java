@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
-@SpringBootTest(properties = "classpath:application-integrationtest.properties")
+@SpringBootTest(properties = "classpath:application-integrationtest.yml")
 public class CloudCmrAppIntegrationTest {
 
     @Autowired
@@ -27,7 +27,7 @@ public class CloudCmrAppIntegrationTest {
     private MemberRepository repository;
 
     @Test
-    public void givenEmployees_whenGetEmployees_thenStatus200()
+    public void givenMemberss_whenGetMembers_thenStatus200()
             throws Exception {
 
         createTestMember("bob", "marley");
